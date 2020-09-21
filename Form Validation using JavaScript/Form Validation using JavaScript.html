@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Form Validation Practice in JavaScript
+        </title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="min.js"></script>
+        <link rel="stylesheet" href="min.css">
+    </head>
+    <body>
+        <table>
+        <tr>
+            <td> First Name: </td>
+            <td><input class="form-control" placeholder="Your First Name..." type="text" id="first" onkeyup="validate();"></td>
+            <td><div id="errFirst"></div></td>
+            </tr>
+            
+            <tr>
+            <td> Last Name: </td>
+            <td><input class="form-control" placeholder="Your Last Name..." type="text" id="last" onkeyup="validate();"></td>
+                <td><div id="errLast"></div></td>
+            </tr>
+            
+            <tr>
+            <td> Email Address: </td>
+            <td><input class="form-control" placeholder="Your Email Address..." type="text" id="email" onkeyup="validate();"></td>
+                <td><div id="errMail"></div></td>
+            </tr>
+            
+            <tr>
+            <td> Identity Number: </td>
+            <td><input class="form-control" placeholder="Your ID..." type="text" id="id" onkeyup="validate();"></td>
+                <td><div id="errId"></div></td>
+            </tr>
+            
+            <tr>
+            <td> Password:  </td>
+            <td><input class="form-control" placeholder="Your Password..." type="password" id="pass" onkeyup="validate();"></td>
+                <td><div id="errPass"></div></td>
+            </tr>
+            
+            <tr>
+            <td> Confirm Password: </td>
+            <td><input class="form-control" placeholder="Confirm Password..." type="password" id="confirmPass" onkeyup="validate();"></td>
+                <td><div id="errConfirmPass"></div></td>
+            </tr>
+            
+        </table>
+          <input type="button" class="btn btn-primary" value="Create" id="create" onclick="finalvalidate();">
+                    
+                    
+                <div id="errFinal"></div>
+    </body>
+</html>
